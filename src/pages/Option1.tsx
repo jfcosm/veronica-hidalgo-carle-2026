@@ -182,6 +182,9 @@ const Option1 = () => {
           </div>
           <div className="opt1-footer-bottom">
             <p>&copy; {new Date().getFullYear()} Verónica Hidalgo Carle. Todos los derechos reservados.</p>
+            <p style={{ marginTop: '0.5rem' }}>
+              Hecho con el ❤️ y la ⚡️ de <a href="https://www.melodialab.net" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-terracota)', textDecoration: 'none', fontWeight: 500 }}>MelodIA Lab</a>
+            </p>
           </div>
         </div>
       </footer>

@@ -184,6 +184,12 @@ const Option2 = () => {
               <p><Phone size={16} /> +56 9 1234 5678</p>
             </div>
           </div>
+          <div className="opt2-footer-bottom" style={{ textAlign: 'center', marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid rgba(0,0,0,0.05)', fontSize: '0.85rem', color: 'var(--color-text-muted)' }}>
+            <p>&copy; {new Date().getFullYear()} Verónica Hidalgo Carle. Todos los derechos reservados.</p>
+            <p style={{ marginTop: '0.5rem' }}>
+              Hecho con el ❤️ y la ⚡️ de <a href="https://www.melodialab.net" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-terracota)', textDecoration: 'none', fontWeight: 500 }}>MelodIA Lab</a>
+            </p>
+          </div>
         </div>
       </footer>
     </div>
