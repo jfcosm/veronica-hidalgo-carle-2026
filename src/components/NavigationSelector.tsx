@@ -1,8 +1,11 @@
 import { NavLink } from 'react-router-dom';
-import { LayoutTemplate } from 'lucide-react';
+import { LayoutTemplate, Sun, Moon } from 'lucide-react';
+import { useTheme } from '../context/ThemeContext';
 import './NavigationSelector.css';
 
 const NavigationSelector = () => {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <div className="nav-selector-container">
       <div className="nav-selector-inner">
@@ -30,6 +33,9 @@ const NavigationSelector = () => {
             Opción 3: Profesional
           </NavLink>
         </div>
+        <button className="theme-toggle-btn" onClick={toggleTheme} aria-label="Cambiar tema">
+          {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
+        </button>
       </div>
     </div>
   );

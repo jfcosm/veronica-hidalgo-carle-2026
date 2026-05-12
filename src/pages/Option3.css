@@ -6,7 +6,7 @@
 
 /* Header */
 .opt3-header {
-  background-color: white;
+  background-color: var(--color-surface);
   border-bottom: 1px solid rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
@@ -262,7 +262,7 @@
 }
 
 .opt3-neuro-card {
-  background-color: white;
+  background-color: var(--color-surface);
   padding: 3rem 2rem;
   position: relative;
   border-top: 3px solid transparent;
@@ -393,7 +393,7 @@
 }
 
 .opt3-form-container {
-  background-color: white;
+  background-color: var(--color-surface);
   padding: 3rem;
   box-shadow: 0 10px 40px rgba(0,0,0,0.05);
 }
@@ -426,7 +426,7 @@
 .opt3-form-group select:focus,
 .opt3-form-group textarea:focus {
   border-color: var(--color-terracota);
-  background-color: white;
+  background-color: var(--color-surface);
   outline: none;
 }
 
