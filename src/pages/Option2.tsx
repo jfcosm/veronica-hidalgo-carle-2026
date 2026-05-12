@@ -1,7 +1,11 @@
 import { ArrowRight, Leaf, Heart, BookOpen, Mail, Phone, Sun } from 'lucide-react';
+import NavControls from '../components/NavControls';
+import { useLanguage } from '../context/LanguageContext';
 import './Option2.css';
 
 const Option2 = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="opt2-container">
       {/* Header */}
@@ -9,12 +13,13 @@ const Option2 = () => {
         <div className="container opt2-header-inner">
           <div className="opt2-logo">
             <h1>Verónica Hidalgo Carle</h1>
-            <p>Terapeuta & Neurocientífica</p>
+            <p>{t('header.subtitle')}</p>
           </div>
           <nav className="opt2-nav">
-            <a href="#about">Mi Visión</a>
-            <a href="#services">Acompañamiento</a>
-            <a href="#contact" className="btn-primary">Contacto</a>
+            <a href="#about">{t('header.nav.myVision')}</a>
+            <a href="#services">{t('header.nav.accompaniment')}</a>
+            <a href="#contact" className="btn-primary">{t('header.nav.contact')}</a>
+            <NavControls />
           </nav>
         </div>
       </header>
@@ -25,20 +30,20 @@ const Option2 = () => {
           <div className="opt2-hero-content animate-fade-in">
             <div className="opt2-hero-badge">
               <Sun size={16} />
-              <span>Sistema Neurofloral®️</span>
+              <span>{t('hero.tagOpt2')}</span>
             </div>
             <h2 className="opt2-hero-title">
-              Sanación profunda desde la <span>conexión humana</span> y la neurociencia
+              {t('hero.titleOpt2')}
             </h2>
             <p className="opt2-hero-text">
-              Te acompaño a modular tus emociones y crear nuevas rutas de bienestar a través de la terapia floral integrativa y el trabajo sistémico.
+              {t('hero.textOpt2')}
             </p>
             <div className="opt2-hero-actions">
               <a href="#contact" className="btn-primary">
-                Agendar Sesión
+                {t('hero.btnBook')}
               </a>
               <a href="#about" className="btn-secondary">
-                Conocer mi enfoque <ArrowRight size={18} />
+                {t('hero.btnApproach')} <ArrowRight size={18} />
               </a>
             </div>
           </div>
@@ -65,20 +70,13 @@ const Option2 = () => {
         <div className="container">
           <div className="opt2-about-wrapper">
             <div className="opt2-about-content">
-              <span className="opt2-subtitle">Más de 20 años de trayectoria</span>
-              <h3 className="opt2-section-title">Acompañando procesos de transformación</h3>
-              <p>
-                A lo largo de mi carrera, he integrado mis conocimientos en trauma, TEA, déficit atencional 
-                y regulación emocional para crear un enfoque único: el <strong>Sistema Neurofloral®️</strong>.
-              </p>
-              <p>
-                Mi compromiso es brindar un espacio seguro y cálido donde las esencias florales actúan 
-                como puente para la modulación emocional, favoreciendo cambios profundos en la percepción 
-                y la conducta.
-              </p>
+              <span className="opt2-subtitle">{t('about.tagOpt2')}</span>
+              <h3 className="opt2-section-title">{t('about.titleOpt2')}</h3>
+              <p dangerouslySetInnerHTML={{ __html: t('about.text1Opt2') }}></p>
+              <p>{t('about.text2Opt2')}</p>
               <div className="opt2-signature">
                 <p className="opt2-name">Verónica Hidalgo Carle</p>
-                <p className="opt2-role">Creadora del Sistema Neurofloral®️</p>
+                <p className="opt2-role">{t('about.role')}</p>
               </div>
             </div>
             <div className="opt2-about-image">
@@ -88,7 +86,7 @@ const Option2 = () => {
               />
               <div className="opt2-experience-badge">
                 <span className="opt2-number">20+</span>
-                <span className="opt2-text">Años de<br/>Experiencia</span>
+                <span className="opt2-text">{t('about.badgeYears')}<br/>{t('about.badgeExp')}</span>
               </div>
             </div>
           </div>
@@ -99,35 +97,35 @@ const Option2 = () => {
       <section id="services" className="opt2-services section-padding">
         <div className="container">
           <div className="opt2-section-header">
-            <h3 className="opt2-section-title">¿Cómo puedo acompañarte?</h3>
-            <p>Descubre las diferentes formas en las que podemos trabajar juntos hacia tu bienestar integral.</p>
+            <h3 className="opt2-section-title">{t('services.titleOpt2')}</h3>
+            <p>{t('services.subtitleOpt2')}</p>
           </div>
           
           <div className="opt2-services-layout">
             <div className="opt2-service-item">
               <div className="opt2-service-content">
                 <Heart className="opt2-service-icon" />
-                <h4>Terapia Individual</h4>
-                <p>Procesos emocionales para niños, adolescentes y adultos, integrando el conocimiento del neurodesarrollo y la terapia floral.</p>
-                <a href="#contact" className="opt2-link">Solicitar información <ArrowRight size={16} /></a>
+                <h4>{t('services.srv1TitleAlt')}</h4>
+                <p>{t('services.srv1TextAlt')}</p>
+                <a href="#contact" className="opt2-link">{t('services.linkInfo')} <ArrowRight size={16} /></a>
               </div>
             </div>
             
             <div className="opt2-service-item">
               <div className="opt2-service-content">
                 <BookOpen className="opt2-service-icon" />
-                <h4>Cursos y Formaciones</h4>
-                <p>Charlas, talleres y formación terapéutica para profesionales y personas interesadas en profundizar en la regulación emocional.</p>
-                <a href="#contact" className="opt2-link">Ver próximos cursos <ArrowRight size={16} /></a>
+                <h4>{t('services.srv2Title')}</h4>
+                <p>{t('services.srv2TextAlt')}</p>
+                <a href="#contact" className="opt2-link">{t('services.linkCourses')} <ArrowRight size={16} /></a>
               </div>
             </div>
             
             <div className="opt2-service-item">
               <div className="opt2-service-content">
                 <Leaf className="opt2-service-icon" />
-                <h4>Esencias Florales</h4>
-                <p>Productos basados en el Sistema Neurofloral®️, formulados específicamente para modular estados emocionales y apoyar tu proceso.</p>
-                <a href="#contact" className="opt2-link">Ver catálogo <ArrowRight size={16} /></a>
+                <h4>{t('services.srv3Title')}</h4>
+                <p>{t('services.srv3TextAlt')}</p>
+                <a href="#contact" className="opt2-link">{t('services.linkCatalog')} <ArrowRight size={16} /></a>
               </div>
             </div>
           </div>
@@ -138,28 +136,27 @@ const Option2 = () => {
       <section id="contact" className="opt2-contact section-padding">
         <div className="container">
           <div className="opt2-contact-box">
-            <h3 className="opt2-section-title text-center">Conectemos</h3>
+            <h3 className="opt2-section-title text-center">{t('contact.titleOpt2')}</h3>
             <p className="text-center opt2-contact-desc">
-              Si sientes que este es el espacio que buscas, me encantará acompañarte. 
-              Escríbeme para agendar una sesión o consultar sobre las formaciones.
+              {t('contact.textOpt2')}
             </p>
             
             <form className="opt2-form">
               <div className="opt2-form-row">
-                <input type="text" placeholder="Tu nombre" required />
-                <input type="email" placeholder="Tu correo" required />
+                <input type="text" placeholder={t('contact.placeholderName')} required />
+                <input type="email" placeholder={t('contact.placeholderEmail')} required />
               </div>
               <div className="opt2-form-row">
                 <select required>
-                  <option value="" disabled selected>Motivo de contacto</option>
-                  <option value="terapia">Consultar por Terapia</option>
-                  <option value="curso">Inscripción a Cursos</option>
-                  <option value="productos">Adquirir Esencias</option>
+                  <option value="" disabled selected>{t('contact.placeholderSubjectAlt')}</option>
+                  <option value="terapia">{t('contact.optTherapyAlt')}</option>
+                  <option value="curso">{t('contact.optCourseAlt')}</option>
+                  <option value="productos">{t('contact.optProductsAlt')}</option>
                 </select>
               </div>
-              <textarea placeholder="Cuéntame un poco sobre lo que buscas..." rows={5} required></textarea>
+              <textarea placeholder={t('contact.placeholderMessageAlt')} rows={5} required></textarea>
               <button type="submit" className="btn-primary opt2-submit">
-                Enviar Mensaje
+                {t('contact.btnSubmit')}
               </button>
             </form>
           </div>
@@ -171,23 +168,23 @@ const Option2 = () => {
         <div className="container">
           <div className="opt2-footer-inner">
             <div className="opt2-footer-info">
-              <h4>Verónica Hidalgo Carle</h4>
-              <p>Terapeuta Floral & Neurocientífica</p>
+              <h4>{t('footer.brand')}</h4>
+              <p>{t('header.subtitle')}</p>
               <div className="opt2-socials">
-                <a href="#">Instagram</a>
+                <a href="https://www.instagram.com/veronica_hidalgo_carle/" target="_blank" rel="noopener noreferrer">{t('footer.links.instagram')}</a>
                 <span>&bull;</span>
-                <a href="#">LinkedIn</a>
+                <a href="#">{t('footer.links.linkedin')}</a>
               </div>
             </div>
             <div className="opt2-footer-contact">
-              <p><Mail size={16} /> contacto@veronicahidalgo.cl</p>
-              <p><Phone size={16} /> +56 9 1234 5678</p>
+              <p><Mail size={16} /> {t('contact.email')}</p>
+              <p><Phone size={16} /> {t('contact.phone')}</p>
             </div>
           </div>
           <div className="opt2-footer-bottom" style={{ textAlign: 'center', marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid rgba(0,0,0,0.05)', fontSize: '0.85rem', color: 'var(--color-text-muted)' }}>
-            <p>&copy; {new Date().getFullYear()} Verónica Hidalgo Carle. Todos los derechos reservados.</p>
+            <p>&copy; {new Date().getFullYear()} {t('footer.rights')}</p>
             <p style={{ marginTop: '0.5rem' }}>
-              Hecho con el ❤️ y la ⚡️ de <a href="https://www.melodialab.net" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-terracota)', textDecoration: 'none', fontWeight: 500 }}>MelodIA Lab</a>
+              {t('footer.madeWith')} <a href="https://www.melodialab.net" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-terracota)', textDecoration: 'none', fontWeight: 500 }}>MelodIA Lab</a>
             </p>
           </div>
         </div>

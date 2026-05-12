@@ -1,21 +1,26 @@
 import { ArrowRight, MapPin, Mail, Phone, CheckCircle, Brain } from 'lucide-react';
+import NavControls from '../components/NavControls';
+import { useLanguage } from '../context/LanguageContext';
 import './Option3.css';
 
 const Option3 = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="opt3-container">
       {/* Header */}
       <header className="opt3-header">
         <div className="container opt3-header-container">
           <div className="opt3-logo">
-            <h1>VERÓNICA HIDALGO CARLE</h1>
-            <span>TERAPEUTA & NEUROCIENTÍFICA</span>
+            <h1>{t('footer.brand').toUpperCase()}</h1>
+            <span>{t('header.subtitle').toUpperCase()}</span>
           </div>
           <nav className="opt3-nav">
-            <a href="#about">Experiencia</a>
-            <a href="#neurofloral">Sistema Neurofloral®️</a>
-            <a href="#services">Servicios</a>
-            <a href="#contact" className="opt3-btn-outline">Agendar Sesión</a>
+            <a href="#about">{t('header.nav.experience')}</a>
+            <a href="#neurofloral">{t('header.nav.neurofloral')}</a>
+            <a href="#services">{t('header.nav.services')}</a>
+            <a href="#contact" className="opt3-btn-outline">{t('header.nav.book')}</a>
+            <NavControls />
           </nav>
         </div>
       </header>
@@ -24,31 +29,33 @@ const Option3 = () => {
       <section className="opt3-hero container">
         <div className="opt3-hero-grid">
           <div className="opt3-hero-content animate-fade-in">
-            <div className="opt3-hero-tag">Acompañamiento Terapéutico Profesional</div>
+            <div className="opt3-hero-tag">{t('hero.tagOpt3')}</div>
             <h2 className="opt3-hero-title">
-              Integrando <span>neurociencia</span> y terapia floral para tu bienestar
+              {t('hero.titleOpt3').split('neurociencia')[0]}
+              <span>neurociencia</span>
+              {t('hero.titleOpt3').split('neurociencia')[1]}
             </h2>
             <p className="opt3-hero-text">
-              Más de dos décadas acompañando procesos emocionales, apoyando la generación de nuevas rutas neuronales y el bienestar integral.
+              {t('hero.textOpt3')}
             </p>
             <div className="opt3-hero-actions">
               <a href="#contact" className="opt3-btn-solid">
-                Iniciar Proceso <ArrowRight size={18} />
+                {t('hero.btnStartProcess')} <ArrowRight size={18} />
               </a>
               <a href="#neurofloral" className="opt3-link-action">
-                Conocer el Sistema <ArrowRight size={18} />
+                {t('hero.btnKnowSystem')} <ArrowRight size={18} />
               </a>
             </div>
             
             <div className="opt3-hero-stats">
               <div className="opt3-stat">
                 <h4>20+</h4>
-                <p>Años de experiencia clínica</p>
+                <p>{t('hero.statYears')}</p>
               </div>
               <div className="opt3-stat-divider"></div>
               <div className="opt3-stat">
                 <h4>Neurofloral®️</h4>
-                <p>Enfoque propio e innovador</p>
+                <p>{t('hero.statNeuro')}</p>
               </div>
             </div>
           </div>
@@ -70,27 +77,27 @@ const Option3 = () => {
         <div className="container">
           <div className="opt3-neuro-header text-center">
             <Brain size={40} className="opt3-icon-primary mx-auto" />
-            <h3 className="opt3-section-title">El Sistema Neurofloral®️</h3>
-            <p className="opt3-section-subtitle">Una mirada seria, humana y profesional al bienestar emocional.</p>
+            <h3 className="opt3-section-title">{t('neurofloral.title')}</h3>
+            <p className="opt3-section-subtitle">{t('neurofloral.subtitle')}</p>
           </div>
           
           <div className="opt3-neuro-grid">
             <div className="opt3-neuro-card">
               <div className="opt3-card-number">01</div>
-              <h4>Regulación Emocional</h4>
-              <p>Abordaje integral para manejar el estrés, la ansiedad y procesos de trauma mediante herramientas comprobadas.</p>
+              <h4>{t('neurofloral.card1Title')}</h4>
+              <p>{t('neurofloral.card1Text')}</p>
             </div>
             
             <div className="opt3-neuro-card">
               <div className="opt3-card-number">02</div>
-              <h4>Neuroplasticidad</h4>
-              <p>Uso de esencias florales como moduladores para apoyar la creación de nuevas rutas neuronales y patrones de conducta.</p>
+              <h4>{t('neurofloral.card2Title')}</h4>
+              <p>{t('neurofloral.card2Text')}</p>
             </div>
             
             <div className="opt3-neuro-card">
               <div className="opt3-card-number">03</div>
-              <h4>Trabajo Sistémico</h4>
-              <p>Comprensión del individuo dentro de su entorno familiar y social, vital en casos de TEA y déficit atencional.</p>
+              <h4>{t('neurofloral.card3Title')}</h4>
+              <p>{t('neurofloral.card3Text')}</p>
             </div>
           </div>
         </div>
@@ -101,29 +108,29 @@ const Option3 = () => {
         <div className="container">
           <div className="opt3-services-wrapper">
             <div className="opt3-services-info">
-              <h3 className="opt3-section-title-light">Servicios y Acompañamiento</h3>
-              <p>Diseñados para adaptarse a tus necesidades específicas de desarrollo y sanación.</p>
+              <h3 className="opt3-section-title-light">{t('services.titleOpt3')}</h3>
+              <p>{t('services.subtitleOpt3')}</p>
               
               <ul className="opt3-service-list">
                 <li>
                   <CheckCircle size={20} className="opt3-check" />
                   <div>
-                    <h5>Terapia Individual</h5>
-                    <span>Para niños, adolescentes y adultos</span>
+                    <h5>{t('services.srv1TitleAlt')}</h5>
+                    <span>{t('services.srv1Target')}</span>
                   </div>
                 </li>
                 <li>
                   <CheckCircle size={20} className="opt3-check" />
                   <div>
-                    <h5>Formación Profesional</h5>
-                    <span>Cursos y talleres del Sistema Neurofloral®️</span>
+                    <h5>{t('services.srv2TitleAlt')}</h5>
+                    <span>{t('services.srv2Target')}</span>
                   </div>
                 </li>
                 <li>
                   <CheckCircle size={20} className="opt3-check" />
                   <div>
-                    <h5>Venta de Esencias</h5>
-                    <span>Fórmulas personalizadas y de línea</span>
+                    <h5>{t('services.srv3TitleAlt')}</h5>
+                    <span>{t('services.srv3Target')}</span>
                   </div>
                 </li>
               </ul>
@@ -144,34 +151,33 @@ const Option3 = () => {
         <div className="container">
           <div className="opt3-contact-grid">
             <div className="opt3-contact-details">
-              <h3 className="opt3-section-title">Agenda tu sesión</h3>
+              <h3 className="opt3-section-title">{t('contact.titleOpt3')}</h3>
               <p className="opt3-contact-text">
-                Da el primer paso hacia una transformación consciente. Estaré encantada de conocer tu caso 
-                y explicarte cómo el Sistema Neurofloral®️ puede ayudarte.
+                {t('contact.textOpt3')}
               </p>
               
               <div className="opt3-contact-info">
                 <div className="opt3-info-row">
                   <div className="opt3-icon-box"><MapPin size={20} /></div>
                   <div>
-                    <h6>Ubicación</h6>
-                    <p>Santiago, Chile / Atención Online Internacional</p>
+                    <h6>{t('contact.lblLocation')}</h6>
+                    <p>{t('contact.location')} / {t('contact.locationDescAlt')}</p>
                   </div>
                 </div>
                 
                 <div className="opt3-info-row">
                   <div className="opt3-icon-box"><Mail size={20} /></div>
                   <div>
-                    <h6>Email</h6>
-                    <p>contacto@veronicahidalgo.cl</p>
+                    <h6>{t('contact.lblEmail')}</h6>
+                    <p>{t('contact.email')}</p>
                   </div>
                 </div>
                 
                 <div className="opt3-info-row">
                   <div className="opt3-icon-box"><Phone size={20} /></div>
                   <div>
-                    <h6>Teléfono</h6>
-                    <p>+56 9 1234 5678</p>
+                    <h6>{t('contact.lblPhone')}</h6>
+                    <p>{t('contact.phone')}</p>
                   </div>
                 </div>
               </div>
@@ -180,28 +186,28 @@ const Option3 = () => {
             <div className="opt3-form-container">
               <form className="opt3-form">
                 <div className="opt3-form-group">
-                  <label>Nombre Completo</label>
+                  <label>{t('contact.placeholderName')}</label>
                   <input type="text" required />
                 </div>
                 <div className="opt3-form-group">
-                  <label>Correo Electrónico</label>
+                  <label>{t('contact.placeholderEmail')}</label>
                   <input type="email" required />
                 </div>
                 <div className="opt3-form-group">
-                  <label>Servicio de Interés</label>
+                  <label>{t('contact.placeholderSubjectAlt')}</label>
                   <select required>
                     <option value="">Selecciona una opción...</option>
-                    <option value="terapia">Terapia individual</option>
-                    <option value="formacion">Formación y Cursos</option>
-                    <option value="productos">Esencias Florales</option>
+                    <option value="terapia">{t('contact.optTherapyAlt')}</option>
+                    <option value="formacion">{t('contact.optCourseAlt')}</option>
+                    <option value="productos">{t('contact.optProductsAlt')}</option>
                   </select>
                 </div>
                 <div className="opt3-form-group">
-                  <label>Mensaje</label>
+                  <label>{t('contact.placeholderMessage')}</label>
                   <textarea rows={4} required></textarea>
                 </div>
                 <button type="submit" className="opt3-btn-solid w-100">
-                  Enviar Solicitud
+                  {t('contact.btnSubmitAlt')}
                 </button>
               </form>
             </div>
@@ -213,24 +219,24 @@ const Option3 = () => {
       <footer className="opt3-footer">
         <div className="container opt3-footer-grid">
           <div className="opt3-footer-brand">
-            <h4>VERÓNICA HIDALGO CARLE</h4>
-            <p>Sistema Neurofloral®️</p>
+            <h4>{t('footer.brand').toUpperCase()}</h4>
+            <p>{t('footer.system')}</p>
           </div>
           <div className="opt3-footer-links">
-            <a href="#">Inicio</a>
-            <a href="#about">Experiencia</a>
-            <a href="#services">Servicios</a>
-            <a href="#contact">Contacto</a>
+            <a href="#">{t('footer.links.home')}</a>
+            <a href="#about">{t('footer.links.experience')}</a>
+            <a href="#services">{t('footer.links.services')}</a>
+            <a href="#contact">{t('footer.links.contact')}</a>
           </div>
           <div className="opt3-footer-social">
-            <a href="#">LinkedIn</a>
-            <a href="#">Instagram</a>
+            <a href="#">{t('footer.links.linkedin')}</a>
+            <a href="https://www.instagram.com/veronica_hidalgo_carle/" target="_blank" rel="noopener noreferrer">{t('footer.links.instagram')}</a>
           </div>
         </div>
         <div className="opt3-footer-copyright">
-          <p>&copy; {new Date().getFullYear()} Verónica Hidalgo Carle. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} {t('footer.rights')}</p>
           <p style={{ marginTop: '0.5rem' }}>
-            Hecho con el ❤️ y la ⚡️ de <a href="https://www.melodialab.net" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-terracota)', textDecoration: 'none', fontWeight: 500 }}>MelodIA Lab</a>
+            {t('footer.madeWith')} <a href="https://www.melodialab.net" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-terracota)', textDecoration: 'none', fontWeight: 500 }}>MelodIA Lab</a>
           </p>
         </div>
       </footer>

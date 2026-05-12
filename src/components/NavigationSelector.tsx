@@ -33,9 +33,6 @@ const NavigationSelector = () => {
             Opción 3: Profesional
           </NavLink>
         </div>
-        <button className="theme-toggle-btn" onClick={toggleTheme} aria-label="Cambiar tema">
-          {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
-        </button>
       </div>
     </div>
   );

@@ -1,0 +1,30 @@
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.nav-control-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: var(--color-text-muted);
+  transition: all 0.2s ease;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.nav-control-btn:hover {
+  color: var(--color-terracota);
+  background-color: var(--color-beige-suave);
+}
+
+.nav-control-divider {
+  width: 1px;
+  height: 20px;
+  background-color: var(--color-border);
+}

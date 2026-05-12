@@ -1,5 +1,6 @@
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import NavigationSelector from './components/NavigationSelector';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 import Option1 from './pages/Option1';
 import Option2 from './pages/Option2';
 import Option3 from './pages/Option3';
@@ -21,6 +22,7 @@ function App() {
         <Route path="/option-3" element={<Option3 />} />
       </Routes>
       <NavigationSelector />
+      <FloatingWhatsApp />
     </>
   );
 }
