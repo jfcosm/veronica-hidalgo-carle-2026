@@ -1,10 +1,8 @@
 import { NavLink } from 'react-router-dom';
-import { LayoutTemplate, Sun, Moon } from 'lucide-react';
-import { useTheme } from '../context/ThemeContext';
+import { LayoutTemplate } from 'lucide-react';
 import './NavigationSelector.css';
 
 const NavigationSelector = () => {
-  const { theme, toggleTheme } = useTheme();
 
   return (
     <div className="nav-selector-container">
