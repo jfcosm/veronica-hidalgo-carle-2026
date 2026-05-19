@@ -2,6 +2,7 @@ import { ArrowRight, Leaf, Heart, BookOpen, Mail, Phone } from 'lucide-react';
 import NavControls from '../components/NavControls';
 import { useLanguage } from '../context/LanguageContext';
 import heroImg from '../assets/images/hero.jpg';
+import vero1Img from '../assets/images/vero1.jpg';
 import './Option2.css';
 const Option2 = () => {
   const { t } = useLanguage();
@@ -61,7 +62,7 @@ const Option2 = () => {
             </div>
             <div className="opt2-about-image">
               <img 
-                src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2120&auto=format&fit=crop" 
+                src={vero1Img} 
                 alt="Verónica Hidalgo Carle" 
               />
               <div className="opt2-experience-badge">
