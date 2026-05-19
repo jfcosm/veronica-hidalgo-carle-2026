@@ -89,7 +89,7 @@
 }
 
 .opt2-hero-split-left {
-  flex: 1;
+  flex: 1.5; /* Takes up 60% of the space */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +159,7 @@
 }
 
 .opt2-hero-split-right {
-  flex: 1;
+  flex: 1; /* Takes up 40% of the space */
   position: relative;
   overflow: hidden;
 }
