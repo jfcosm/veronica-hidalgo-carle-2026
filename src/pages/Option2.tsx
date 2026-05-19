@@ -1,4 +1,4 @@
-import { ArrowRight, Leaf, Heart, BookOpen, Mail, Phone, Sun } from 'lucide-react';
+import { ArrowRight, Leaf, Heart, BookOpen, Mail, Phone } from 'lucide-react';
 import NavControls from '../components/NavControls';
 import { useLanguage } from '../context/LanguageContext';
 import heroImg from '../assets/images/hero.jpg';
