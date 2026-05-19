@@ -1,8 +1,8 @@
 import { ArrowRight, Leaf, Heart, BookOpen, Mail, Phone, Sun } from 'lucide-react';
 import NavControls from '../components/NavControls';
 import { useLanguage } from '../context/LanguageContext';
+import heroImg from '../assets/images/hero.jpg';
 import './Option2.css';
-
 const Option2 = () => {
   const { t } = useLanguage();
 
@@ -25,43 +25,23 @@ const Option2 = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="opt2-hero section-padding">
-        <div className="container">
-          <div className="opt2-hero-content animate-fade-in">
-            <div className="opt2-hero-badge">
-              <Sun size={16} />
-              <span>{t('hero.tagOpt2')}</span>
-            </div>
-            <h2 className="opt2-hero-title">
+      <section className="opt2-hero-split">
+        <div className="opt2-hero-split-left animate-fade-in">
+          <div className="opt2-hero-split-content">
+            <span className="opt2-hero-top-text">{t('hero.tagOpt2')}</span>
+            <h2 className="opt2-hero-main-title">
               {t('hero.titleOpt2')}
             </h2>
-            <p className="opt2-hero-text">
-              {t('hero.textOpt2')}
+            <p className="opt2-hero-main-text" dangerouslySetInnerHTML={{ __html: t('hero.textOpt2') }}>
             </p>
-            <div className="opt2-hero-actions">
-              <a href="#contact" className="btn-primary">
-                {t('hero.btnBook')}
-              </a>
-              <a href="#about" className="btn-secondary">
-                {t('hero.btnApproach')} <ArrowRight size={18} />
-              </a>
-            </div>
+            <a href="#contact" className="btn-gold">
+              {t('hero.btnBook')}
+            </a>
           </div>
-          
-          <div className="opt2-hero-images animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            <div className="opt2-img-1">
-              <img 
-                src="https://images.unsplash.com/photo-1596431940984-7a0dd7ee16d1?q=80&w=2070&auto=format&fit=crop" 
-                alt="Ambiente cálido terapéutico" 
-              />
-            </div>
-            <div className="opt2-img-2">
-              <img 
-                src="https://images.unsplash.com/photo-1490750967868-88cb44cb2753?q=80&w=2070&auto=format&fit=crop" 
-                alt="Esencias florales" 
-              />
-            </div>
-          </div>
+        </div>
+        
+        <div className="opt2-hero-split-right animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <img src={heroImg} alt="Verónica Hidalgo Carle" />
         </div>
       </section>
 
