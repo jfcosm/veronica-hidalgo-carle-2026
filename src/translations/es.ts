@@ -45,7 +45,7 @@ const es = {
     titleOpt2: "Acompañando procesos de transformación",
     text1Opt2: "A lo largo de mi carrera, he integrado mis conocimientos en trauma, TEA, déficit atencional y regulación emocional para crear un enfoque único: el Sistema Neurofloral®️.",
     text2Opt2: "Mi compromiso es brindar un espacio seguro y cálido donde las esencias florales actúan como puente para la modulación emocional, favoreciendo cambios profundos en la percepción y la conducta.",
-    role: "Creadora del Sistema Neurofloral®️",
+    role: "Experta en el Sistema Neurofloral®️",
     badgeYears: "Años de",
     badgeExp: "Experiencia"
   },

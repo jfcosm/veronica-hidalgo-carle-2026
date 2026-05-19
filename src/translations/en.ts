@@ -45,7 +45,7 @@ const en = {
     titleOpt2: "Accompanying transformation processes",
     text1Opt2: "Throughout my career, I have integrated my knowledge in trauma, ASD, attention deficit, and emotional regulation to create a unique approach: the Neurofloral System®️.",
     text2Opt2: "My commitment is to provide a safe and warm space where floral essences act as a bridge for emotional modulation, favoring profound changes in perception and behavior.",
-    role: "Creator of the Neurofloral System®️",
+    role: "Expert on the Neurofloral System®️",
     badgeYears: "Years of",
     badgeExp: "Experience"
   },
