@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-.opt2-logo h1 {
+.opt2-logo .logo-title {
   font-size: 1.3rem;
   font-family: var(--font-heading);
   color: var(--color-terracota);

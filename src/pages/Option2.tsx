@@ -13,7 +13,7 @@ const Option2 = () => {
       <header className="opt2-header animate-fade-in">
         <div className="container opt2-header-inner">
           <div className="opt2-logo">
-            <h1>Verónica Hidalgo Carle</h1>
+            <div className="logo-title">Verónica Hidalgo Carle</div>
             <p>{t('header.subtitle')}</p>
           </div>
           <nav className="opt2-nav">
@@ -30,9 +30,9 @@ const Option2 = () => {
         <div className="opt2-hero-split-left animate-fade-in">
           <div className="opt2-hero-split-content">
             <span className="opt2-hero-top-text">{t('hero.tagOpt2')}</span>
-            <h2 className="opt2-hero-main-title">
+            <h1 className="opt2-hero-main-title">
               {t('hero.titleOpt2')}
-            </h2>
+            </h1>
             <p className="opt2-hero-main-text" dangerouslySetInnerHTML={{ __html: t('hero.textOpt2') }}>
             </p>
             <a href="#contact" className="btn-gold">
@@ -42,7 +42,7 @@ const Option2 = () => {
         </div>
         
         <div className="opt2-hero-split-right animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          <img src={heroImg} alt="Verónica Hidalgo Carle" />
+          <img src={heroImg} alt="Verónica Hidalgo Carle - Sistema Neurofloral y Constelaciones Familiares" />
         </div>
       </section>
 
@@ -52,7 +52,7 @@ const Option2 = () => {
           <div className="opt2-about-wrapper">
             <div className="opt2-about-content">
               <span className="opt2-subtitle">{t('about.tagOpt2')}</span>
-              <h3 className="opt2-section-title">{t('about.titleOpt2')}</h3>
+              <h2 className="opt2-section-title">{t('about.titleOpt2')}</h2>
               <p dangerouslySetInnerHTML={{ __html: t('about.text1Opt2') }}></p>
               <p>{t('about.text2Opt2')}</p>
               <div className="opt2-signature">
@@ -63,7 +63,7 @@ const Option2 = () => {
             <div className="opt2-about-image">
               <img 
                 src={vero1Img} 
-                alt="Verónica Hidalgo Carle" 
+                alt="Verónica Hidalgo Carle - Terapeuta Experta en Regulación Emocional" 
               />
               <div className="opt2-experience-badge">
                 <span className="opt2-number">20+</span>
@@ -78,7 +78,7 @@ const Option2 = () => {
       <section id="services" className="opt2-services section-padding">
         <div className="container">
           <div className="opt2-section-header">
-            <h3 className="opt2-section-title">{t('services.titleOpt2')}</h3>
+            <h2 className="opt2-section-title">{t('services.titleOpt2')}</h2>
             <p>{t('services.subtitleOpt2')}</p>
           </div>
           
@@ -117,7 +117,7 @@ const Option2 = () => {
       <section id="contact" className="opt2-contact section-padding">
         <div className="container">
           <div className="opt2-contact-box">
-            <h3 className="opt2-section-title text-center">{t('contact.titleOpt2')}</h3>
+            <h2 className="opt2-section-title text-center">{t('contact.titleOpt2')}</h2>
             <p className="text-center opt2-contact-desc">
               {t('contact.textOpt2')}
             </p>
