@@ -300,10 +300,21 @@
   color: var(--color-text-dark);
 }
 
-.opt2-service-item p {
+.opt2-service-item p,
+.opt2-service-desc p {
   color: var(--color-text-muted);
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
   font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.opt2-service-desc p:last-child {
+  margin-bottom: 2rem;
+}
+
+.opt2-service-desc strong {
+  color: var(--color-text-dark);
+  font-weight: 600;
 }
 
 .opt2-link {

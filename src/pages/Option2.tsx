@@ -54,7 +54,9 @@ const Option2 = () => {
               <span className="opt2-subtitle">{t('about.tagOpt2')}</span>
               <h2 className="opt2-section-title">{t('about.titleOpt2')}</h2>
               <p dangerouslySetInnerHTML={{ __html: t('about.text1Opt2') }}></p>
-              <p>{t('about.text2Opt2')}</p>
+              <p dangerouslySetInnerHTML={{ __html: t('about.text2Opt2') }}></p>
+              <p dangerouslySetInnerHTML={{ __html: t('about.text3Opt2') }}></p>
+              <p dangerouslySetInnerHTML={{ __html: t('about.text4Opt2') }}></p>
               <div className="opt2-signature">
                 <p className="opt2-name">Verónica Hidalgo Carle</p>
                 <p className="opt2-role">{t('about.role')}</p>
@@ -87,7 +89,7 @@ const Option2 = () => {
               <div className="opt2-service-content">
                 <Heart className="opt2-service-icon" />
                 <h4>{t('services.srv1TitleAlt')}</h4>
-                <p>{t('services.srv1TextAlt')}</p>
+                <div className="opt2-service-desc" dangerouslySetInnerHTML={{ __html: t('services.srv1TextAlt') }}></div>
                 <a href="#contact" className="opt2-link">{t('services.linkInfo')} <ArrowRight size={16} /></a>
               </div>
             </div>
@@ -96,8 +98,8 @@ const Option2 = () => {
               <div className="opt2-service-content">
                 <BookOpen className="opt2-service-icon" />
                 <h4>{t('services.srv2Title')}</h4>
-                <p>{t('services.srv2TextAlt')}</p>
-                <a href="#contact" className="opt2-link">{t('services.linkCourses')} <ArrowRight size={16} /></a>
+                <div className="opt2-service-desc" dangerouslySetInnerHTML={{ __html: t('services.srv2TextAlt') }}></div>
+                <a href="#contact" className="opt2-link">{t('services.linkInfo')} <ArrowRight size={16} /></a>
               </div>
             </div>
             
@@ -105,8 +107,8 @@ const Option2 = () => {
               <div className="opt2-service-content">
                 <Leaf className="opt2-service-icon" />
                 <h4>{t('services.srv3Title')}</h4>
-                <p>{t('services.srv3TextAlt')}</p>
-                <a href="#contact" className="opt2-link">{t('services.linkCatalog')} <ArrowRight size={16} /></a>
+                <div className="opt2-service-desc" dangerouslySetInnerHTML={{ __html: t('services.srv3TextAlt') }}></div>
+                <a href="#contact" className="opt2-link">{t('services.linkInfo')} <ArrowRight size={16} /></a>
               </div>
             </div>
           </div>
@@ -130,9 +132,10 @@ const Option2 = () => {
               <div className="opt2-form-row">
                 <select required>
                   <option value="" disabled selected>{t('contact.placeholderSubjectAlt')}</option>
-                  <option value="terapia">{t('contact.optTherapyAlt')}</option>
-                  <option value="curso">{t('contact.optCourseAlt')}</option>
-                  <option value="productos">{t('contact.optProductsAlt')}</option>
+                  <option value="terapia_neurofloral">{t('contact.optTherapyAlt')}</option>
+                  <option value="constelaciones">{t('contact.optCourseAlt')}</option>
+                  <option value="tarot">{t('contact.optProductsAlt')}</option>
+                  <option value="otro">{t('contact.optOther')}</option>
                 </select>
               </div>
               <textarea placeholder={t('contact.placeholderMessageAlt')} rows={5} required></textarea>
