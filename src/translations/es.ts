@@ -22,7 +22,9 @@ const es = {
     titleOpt2: "Especialista en infancia, adolescencia y adultos desde la neurociencia de la emoción.",
     titleOpt3: "Integrando neurociencia y terapia floral para tu bienestar",
     textOpt1: "Más de dos décadas acompañando procesos en niños, adolescentes y adultos, integrando terapia floral, neurociencia y trabajo sistémico para favorecer cambios profundos en tu bienestar.",
-    textOpt2: "Creadora del método <strong>Sistema Neurofloral®</strong> y miembro activo de la Cumbre Mundial de Terapia Floral.<br/><br/>Te acompaño a restablecer tu salud emocional desde el trabajo sistémico y el acompañamiento con esencias florales, sintonías de la naturaleza orientadas a recuperar el equilibrio interior y reconectar con tu mejor versión.",
+    textOpt2: "Te acompaño a restablecer tu salud emocional desde el trabajo sistémico y el acompañamiento con esencias florales, sintonías de la naturaleza orientadas a recuperar el equilibrio interior y reconectar con tu mejor versión.",
+    textOpt2Full: "Creadora del método <strong>Sistema Neurofloral®</strong> y miembro activo de la Cumbre Mundial de Terapia Floral.<br/><br/>Te acompaño a restablecer tu salud emocional desde el trabajo sistémico y el acompañamiento con esencias florales, sintonías de la naturaleza orientadas a recuperar el equilibrio interior y reconectar con tu mejor versión.",
+    btnReadMore: "Ver más",
     textOpt3: "Más de dos décadas acompañando procesos emocionales, apoyando la generación de nuevas rutas neuronales y el bienestar integral.",
     btnStart: "Comenzar tu proceso",
     btnLearnMore: "Conocer más",
@@ -83,9 +85,13 @@ const es = {
     srv3Text: "Venta de productos y fórmulas exclusivas diseñadas para apoyar procesos específicos de regulación y bienestar integral.",
     srv3TextAlt: "<p>El Tarot Terapéutico Evolutivo es una dinámica de orientación y autoconocimiento donde trabajamos el conflicto o situación que hoy está generando inquietud, confusión o bloqueo en tu vida.</p><p>A través de una lectura profunda con tres tipos de tarot, Rider Waite, Tarot de Aleister Crowley y Tarot Zen de filosofía china, comenzamos a abrir un campo de información que permite acceder a contenidos inconscientes, patrones emocionales y antecedentes internos relacionados con lo que estás viviendo.</p><p>Cada mazo entrega una mirada distinta y complementaria, permitiendo comprender con mayor claridad el proceso que atraviesas y favoreciendo una toma de decisiones más consciente, segura y conectada contigo mismo.</p><p>Si el proceso lo requiere, la sesión también puede complementarse con esencias florales, orientadas a acompañar emocionalmente el trabajo terapéutico y apoyar los cambios que deseas generar.</p>",
     srv3Target: "Fórmulas personalizadas y de línea",
+    srv1Summary: "A través de una mirada neuroemocional y sistémica, exploramos el origen de los conflictos emocionales y conductuales de niños, adolescentes y adultos, acompañando el proceso de regulación interna con una prescripción personalizada de esencias florales.",
+    srv2Summary: "Una dinámica terapéutica profunda (presencial u online) orientada a ordenar visualmente dinámicas familiares inconscientes utilizando un tablero y figuras de madera, complementado con programación neurolingüística y esencias florales.",
+    srv3Summary: "Una sesión de autoconocimiento y orientación para desbloquear situaciones actuales, utilizando la lectura complementaria de tres mazos de Tarot (Rider Waite, Crowley y Zen) y el apoyo de esencias florales si el proceso lo requiere.",
     linkInfo: "Solicitar información",
     linkCourses: "Ver próximos cursos",
-    linkCatalog: "Ver catálogo"
+    linkCatalog: "Ver catálogo",
+    linkReadMore: "Leer más",
   },
   contact: {
     titleOpt1: "Da el primer paso hacia tu bienestar",
@@ -132,6 +138,11 @@ const es = {
     },
     rights: "Verónica Hidalgo Carle. Todos los derechos reservados.",
     madeWith: "Hecho con el ❤️ y la ⚡️ de"
+  },
+  detail: {
+    back: "Volver al inicio",
+    title: "Detalle del Servicio",
+    aboutTitle: "Sobre Verónica"
   }
 };
 

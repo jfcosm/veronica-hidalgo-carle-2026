@@ -22,7 +22,9 @@ const en = {
     titleOpt2: "Specialist in childhood, adolescence, and adults from the neuroscience of emotion.",
     titleOpt3: "Integrating neuroscience and floral therapy for your wellbeing",
     textOpt1: "Over two decades accompanying processes in children, adolescents, and adults, integrating floral therapy, neuroscience, and systemic work to favor deep changes in your wellbeing.",
-    textOpt2: "Creator of the <strong>Neurofloral System®</strong> method and active member of the World Summit of Floral Therapy.<br/><br/>I accompany you to restore your emotional health through systemic work and accompaniment with floral essences, harmonies of nature oriented to recover inner balance and reconnect with your best version.",
+    textOpt2: "I accompany you to restore your emotional health through systemic work and accompaniment with floral essences, harmonies of nature oriented to recover inner balance and reconnect with your best version.",
+    textOpt2Full: "Creator of the <strong>Neurofloral System®</strong> method and active member of the World Summit of Floral Therapy.<br/><br/>I accompany you to restore your emotional health through systemic work and accompaniment with floral essences, harmonies of nature oriented to recover inner balance and reconnect with your best version.",
+    btnReadMore: "Read more",
     textOpt3: "Over two decades accompanying emotional processes, supporting the generation of new neural pathways and integral wellbeing.",
     btnStart: "Start your process",
     btnLearnMore: "Learn more",
@@ -83,9 +85,13 @@ const en = {
     srv3Text: "Sale of products and exclusive formulas designed to support specific processes of regulation and integral wellbeing.",
     srv3TextAlt: "<p>Evolutionary Therapeutic Tarot is a dynamic of guidance and self-knowledge where we work on the conflict or situation that is currently generating concern, confusion, or blockage in your life.</p><p>Through a deep reading with three types of tarot—Rider Waite, Aleister Crowley Tarot, and Zen Tarot of Chinese philosophy—we begin to open a field of information that allows access to unconscious content, emotional patterns, and internal background related to what you are experiencing.</p><p>Each deck delivers a different and complementary view, allowing a clearer understanding of the process you are going through and favoring a more conscious, secure, and connected decision-making process.</p><p>If the process requires it, the session can also be complemented with floral essences, oriented to emotionally accompany the therapeutic work and support the changes you wish to generate.</p>",
     srv3Target: "Custom and standard formulas",
+    srv1Summary: "Through a neuroemotional and systemic lens, we explore the origin of emotional and behavioral conflicts in children, adolescents, and adults, accompanying the internal regulation process with a personalized prescription of floral essences.",
+    srv2Summary: "A deep therapeutic dynamic (in-person or online) oriented to visually organize unconscious family dynamics using a board and wooden figures, complemented with neuro-linguistic programming and floral essences.",
+    srv3Summary: "A session of self-knowledge and guidance to unblock current situations, using the complementary reading of three Tarot decks (Rider Waite, Crowley, and Zen) and the support of floral essences if required.",
     linkInfo: "Request information",
     linkCourses: "See upcoming courses",
-    linkCatalog: "See catalog"
+    linkCatalog: "See catalog",
+    linkReadMore: "Read more"
   },
   contact: {
     titleOpt1: "Take the first step towards your wellbeing",
@@ -132,6 +138,11 @@ const en = {
     },
     rights: "Verónica Hidalgo Carle. All rights reserved.",
     madeWith: "Made with ❤️ and ⚡️ by"
+  },
+  detail: {
+    back: "Back to home",
+    title: "Service Detail",
+    aboutTitle: "About Verónica"
   }
 };
 

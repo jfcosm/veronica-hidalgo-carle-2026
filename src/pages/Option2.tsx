@@ -1,4 +1,5 @@
 import { ArrowRight, Leaf, Heart, BookOpen, Mail, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import NavControls from '../components/NavControls';
 import { useLanguage } from '../context/LanguageContext';
 import heroImg from '../assets/images/hero.jpg';
@@ -35,9 +36,14 @@ const Option2 = () => {
             </h1>
             <p className="opt2-hero-main-text" dangerouslySetInnerHTML={{ __html: t('hero.textOpt2') }}>
             </p>
-            <a href="#contact" className="btn-gold">
-              {t('hero.btnBook')}
-            </a>
+            <div className="opt2-hero-actions" style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <a href="#contact" className="btn-gold">
+                {t('hero.btnBook')}
+              </a>
+              <Link to="/detalle/sobre-mi" className="btn-secondary" style={{ borderRadius: '50px', padding: '1rem 2.5rem', fontSize: '1.1rem', fontWeight: 700 }}>
+                {t('hero.btnReadMore')}
+              </Link>
+            </div>
           </div>
         </div>
         
@@ -89,8 +95,8 @@ const Option2 = () => {
               <div className="opt2-service-content">
                 <Heart className="opt2-service-icon" />
                 <h4>{t('services.srv1TitleAlt')}</h4>
-                <div className="opt2-service-desc" dangerouslySetInnerHTML={{ __html: t('services.srv1TextAlt') }}></div>
-                <a href="#contact" className="opt2-link">{t('services.linkInfo')} <ArrowRight size={16} /></a>
+                <p>{t('services.srv1Summary')}</p>
+                <Link to="/detalle/terapia-neurofloral" className="opt2-link">{t('services.linkReadMore')} <ArrowRight size={16} /></Link>
               </div>
             </div>
             
@@ -98,8 +104,8 @@ const Option2 = () => {
               <div className="opt2-service-content">
                 <BookOpen className="opt2-service-icon" />
                 <h4>{t('services.srv2Title')}</h4>
-                <div className="opt2-service-desc" dangerouslySetInnerHTML={{ __html: t('services.srv2TextAlt') }}></div>
-                <a href="#contact" className="opt2-link">{t('services.linkInfo')} <ArrowRight size={16} /></a>
+                <p>{t('services.srv2Summary')}</p>
+                <Link to="/detalle/constelaciones-familiares" className="opt2-link">{t('services.linkReadMore')} <ArrowRight size={16} /></Link>
               </div>
             </div>
             
@@ -107,8 +113,8 @@ const Option2 = () => {
               <div className="opt2-service-content">
                 <Leaf className="opt2-service-icon" />
                 <h4>{t('services.srv3Title')}</h4>
-                <div className="opt2-service-desc" dangerouslySetInnerHTML={{ __html: t('services.srv3TextAlt') }}></div>
-                <a href="#contact" className="opt2-link">{t('services.linkInfo')} <ArrowRight size={16} /></a>
+                <p>{t('services.srv3Summary')}</p>
+                <Link to="/detalle/tarot-evolutivo" className="opt2-link">{t('services.linkReadMore')} <ArrowRight size={16} /></Link>
               </div>
             </div>
           </div>
